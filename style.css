@@ -5,7 +5,7 @@ html {
 body {
     background:url(bg2.png);
     font-family: 'Roboto Mono', monospace;
-    color:#5B3758;
+    color:white;
     display:grid;
     grid-template-rows: 100vh 100vh auto auto auto;
     grid-template-columns: auto;
@@ -13,7 +13,9 @@ body {
 
 header {
     size: 100vh;
-    background:#F9ADA0;
+    background:rgba(249,158,153,0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     justify-self:center;
     align-self:center;
     grid-row:1;
@@ -21,6 +23,10 @@ header {
     grid-template-columns: auto auto auto;
     grid-template-rows:auto auto auto;
     padding:30px;
+    border:solid 3px white;
+    box-shadow: white 10px 10px;
+    
+
 }
 
 #about {
@@ -32,7 +38,8 @@ header {
 }
 
 header img {
-    border:5px double white;
+    border:solid 3px #7DD18B;
+    box-shadow:#7DD18B 8px 8px;
 }
 
 #portrait {
@@ -40,7 +47,7 @@ header img {
     grid-row:1 / span 3;
 }
 
-header h1, h3, nav {
+header h1, h2, nav {
     padding:15px;
     margin:15px;
     grid-column:3;
@@ -48,11 +55,11 @@ header h1, h3, nav {
 
 header h1 {
     grid-row:1;
+    color:white;
+    text-shadow: #7DD18B 5px 5px;
+
 }
 
-header h3 {
-    grid-row:2;
-}
 
 nav h3 {
     font-family: 'Climate Crisis', cursive;
@@ -61,6 +68,7 @@ nav h3 {
     padding:20px;
     font-size:40px;
     letter-spacing: normal;
+    box-shadow: #7DD18B 8px 8px;
     transition:  0.5s;
 
 }
