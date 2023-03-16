@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background:#83b692;
+    background:url(bg2.png);
     font-family: 'Roboto Mono', monospace;
     color:#5B3758;
     display:grid;
@@ -12,6 +12,7 @@ body {
 }
 
 header {
+    size: 100vh;
     background:#F9ADA0;
     justify-self:center;
     align-self:center;
@@ -54,30 +55,31 @@ header h3 {
 }
 
 nav h3 {
-    background:#F9627D;
+    font-family: 'Climate Crisis', cursive;
+    background:white;
     margin:15px;
     padding:20px;
-    font-size:50px;
+    font-size:40px;
     letter-spacing: normal;
-    transition:background 0.5s;
-    transition: letter-spacing 0.5s;
+    transition:  0.5s;
 
 }
 
 nav h3:hover {
     color:white;
     background:#C65B7C;
-    letter-spacing:5px;
+    letter-spacing:10px;
 
     
 }
 
 h1 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 50px;
 }
 
 a {
-    color:#BDB299;
+    color:#7DD18B;
     transition: color 0.5s;
     text-decoration:none;
 }
