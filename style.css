@@ -11,6 +11,7 @@ body {
     grid-template-columns: auto;
 }
 
+/*header*/
 header {
     size: 100vh;
     background:rgba(249,158,153,0.8);
@@ -25,12 +26,6 @@ header {
     padding:30px;
     border:solid 3px white;
     box-shadow: white 10px 10px;
-    
-
-}
-
-#about {
-    grid-row:2;
 }
 
 #projects {
@@ -67,7 +62,7 @@ nav h3 {
     margin:15px;
     padding:20px;
     font-size:40px;
-    letter-spacing: normal;
+    letter-spacing: 3PX;
     box-shadow: #7DD18B 8px 8px;
     transition:  0.5s;
 
@@ -84,6 +79,7 @@ nav h3:hover {
 h1 {
     font-family: 'Climate Crisis', cursive;
     font-size: 50px;
+    letter-spacing:5px;
 }
 
 a {
@@ -94,4 +90,24 @@ a {
 
 a:hover {
     color:white;
+}
+
+/*about*/
+#about {
+    size: 100vh;
+    background:rgba(249,158,153,0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-self:center;
+    align-self:center;
+    grid-row:2;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:auto auto auto;
+    padding:30px;
+    border:solid 3px white;
+    box-shadow: white 10px 10px;
+    
+
+}
 }
