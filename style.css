@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background:url(bg2.png);
+    background:#758e4f;
     font-family: 'Roboto Mono', monospace;
     color:white;
     display:grid;
@@ -14,7 +14,7 @@ body {
 /*header*/
 header {
     size: 100vh;
-    background:rgba(255,227,87,0.7);
+    background:#f6ae2d;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     justify-self:center;
@@ -111,5 +111,4 @@ a:hover {
     box-shadow: white 10px 10px;
     
 
-}
 }
