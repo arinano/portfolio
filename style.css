@@ -14,7 +14,7 @@ body {
 /*header*/
 header {
     size: 100vh;
-    background:rgba(249,158,153,0.8);
+    background:rgba(255,227,87,0.7);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     justify-self:center;
@@ -33,8 +33,8 @@ header {
 }
 
 header img {
-    border:solid 3px #7DD18B;
-    box-shadow:#7DD18B 8px 8px;
+    border:solid 3px #1C81D9;
+    box-shadow:#1C81D9 8px 8px;
 }
 
 #portrait {
@@ -51,7 +51,7 @@ header h1, h2, nav {
 header h1 {
     grid-row:1;
     color:white;
-    text-shadow: #7DD18B 5px 5px;
+    text-shadow: #1C81D9 5px 5px;
 
 }
 
@@ -63,14 +63,14 @@ nav h3 {
     padding:20px;
     font-size:40px;
     letter-spacing: 3PX;
-    box-shadow: #7DD18B 8px 8px;
+    box-shadow: #1C81D9 8px 8px;
     transition:  0.5s;
 
 }
 
 nav h3:hover {
     color:white;
-    background:#C65B7C;
+    background:#D14B6D;
     letter-spacing:10px;
 
     
@@ -82,8 +82,10 @@ h1 {
     letter-spacing:5px;
 }
 
-a {
-    color:#7DD18B;
+nav a {
+    display:block;
+    width:100%;
+    color:#D14B6D;
     transition: color 0.5s;
     text-decoration:none;
 }
