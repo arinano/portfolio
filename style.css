@@ -11,21 +11,34 @@ body {
     grid-template-columns: auto;
 }
 
-/*header*/
-header {
+/*general*/
+header, #about, #projects {
     size: 100vh;
-    background:#f6ae2d;
+    background:rgba(246, 174, 45, 0.8);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     justify-self:center;
     align-self:center;
+    padding:30px;
+    border:solid 3px white;
+    box-shadow: white 10px 10px;
+}
+
+article h2 {
+    font-family: 'Climate Crisis', cursive;
+    margin:15px;
+    padding:20px;
+    font-size:40px;
+    letter-spacing: 4PX;
+    text-shadow: #1C81D9 5px 5px;
+}
+
+/*header*/
+header {
     grid-row:1;
     display:grid;
     grid-template-columns: auto auto auto;
     grid-template-rows:auto auto auto;
-    padding:30px;
-    border:solid 3px white;
-    box-shadow: white 10px 10px;
 }
 
 #projects {
@@ -62,7 +75,7 @@ nav h3 {
     margin:15px;
     padding:20px;
     font-size:40px;
-    letter-spacing: 3PX;
+    letter-spacing: 4PX;
     box-shadow: #1C81D9 8px 8px;
     transition:  0.5s;
 
@@ -71,7 +84,7 @@ nav h3 {
 nav h3:hover {
     color:white;
     background:#D14B6D;
-    letter-spacing:10px;
+    letter-spacing:12px;
 
     
 }
@@ -95,20 +108,4 @@ a:hover {
 }
 
 /*about*/
-#about {
-    size: 100vh;
-    background:rgba(249,158,153,0.8);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    justify-self:center;
-    align-self:center;
-    grid-row:2;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows:auto auto auto;
-    padding:30px;
-    border:solid 3px white;
-    box-shadow: white 10px 10px;
-    
 
-}
