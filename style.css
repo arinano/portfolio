@@ -5,6 +5,8 @@ html {
 body {
     background:#A6C36F;
     background-image: url(bg3.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     font-family: 'Roboto Mono', monospace;
     color:white;
     display:grid;
