@@ -4,13 +4,13 @@ html {
 }
 
 body {
-    background:#0F1A20;
-    background-image:url(bg5.png);
+    background:#8abe27;
+    background-image: url(bg3.png);
     background-repeat:no-repeat;
     background-attachment: fixed;
     color:white;
     display:grid;
-    grid-template-rows: 100vh auto auto auto auto;
+    grid-template-rows: 100vh 100vh auto auto auto;
     grid-template-columns: auto;
     font:'Montserrat';
 }
@@ -18,16 +18,15 @@ body {
 /*general*/
 header, #about, #projects {
     size: 100vh;
-    background:#8bb1bdda;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background:#ffc400c4;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     justify-self:center;
     align-self:center;
-    padding:40px;
+    padding:30px;
     border:solid 3px white;
     box-shadow: white 10px 10px;
-    margin:190px;
-    scroll-margin-top: 100px;
+    margin:170px;
 }
 
 article h2 {
@@ -36,16 +35,7 @@ article h2 {
     padding:20px;
     font-size:40px;
     letter-spacing: 4PX;
-    text-shadow: #F42C04 5px 5px;
-}
-
-a {
-    color:#F42C04;
-}
-
-img {
-    border:solid 3px #F42C04;
-    box-shadow:#F42C04 8px 8px;
+    text-shadow: #1C81D9 5px 5px;
 }
 
 /*header*/
@@ -60,29 +50,30 @@ header p {
     font-size:20px;
 }
 
+#projects {
+    grid-row:3;
+}
 
 header img {
-    display:grid;
-    height:90%;
-    width:90%;
+    border:solid 3px #1C81D9;
+    box-shadow:#1C81D9 8px 8px;
 }
 
 #portrait {
     grid-column:2;
     grid-row:1 / span 3;
-    align-self:center;
 }
 
 header h1, h2, nav {
-    padding:10px;
-    margin:9px;
+    padding:15px;
+    margin:15px;
     grid-column:3;
 }
 
 header h1 {
     grid-row:1;
     color:white;
-    text-shadow: #F42C04 5px 5px;
+    text-shadow: #1C81D9 5px 5px;
 
 }
 
@@ -94,14 +85,14 @@ nav h3 {
     padding:20px;
     font-size:40px;
     letter-spacing: 4PX;
-    box-shadow: #F42C04 8px 8px;
+    box-shadow: #1C81D9 8px 8px;
     transition:  0.5s;
 
 }
 
 nav h3:hover {
     color:white;
-    background:#ADA296;
+    background:#f14973;
     letter-spacing:12px;
 
     
@@ -116,7 +107,7 @@ h1 {
 nav a {
     display:block;
     width:100%;
-    color:#F42C04;
+    color:#f14973;;
     transition: color 0.5s;
     text-decoration:none;
 }
@@ -141,56 +132,8 @@ a:hover {
 #bio {
     grid-column:1;
     grid-row:2;
-    text-justify: auto;
 }
 
 #skills {
     grid-row:2;
 }
-
-/*projects*/
-#projects {
-    grid-row:3;
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
-}
-
-.project {
-    grid-column:span 1;
-    grid-row: 2;
-    padding: 5%;
-    text-align: center;
-}
-
-#projects h2 {
-    grid-column:span 4;
-}
-
-#button {
-    display: none; 
-    position: fixed; 
-    bottom: 20px;
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: red; 
-    color: white;
-    cursor: pointer;
-    padding-left: 25px;
-    padding-right:25px;
-    padding-top: 9px;
-    padding-bottom:9px;
-    font-size: 24px;
-    font-family: 'Climate Crisis', cursive;
-    border:solid 3px white;
-    box-shadow: white 7px 7px;
-    transition:  0.5s;
-  }
-  
-  #button:hover {
-    background-color: #ADA296;;
-    letter-spacing:4px;
-  }
-  
