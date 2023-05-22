@@ -16,7 +16,7 @@ body {
 }
 
 /*general*/
-header, #about, #projects {
+header, #about, #projects, fieldset {
     size: 100vh;
     background:#8bb1bdda;
     -webkit-backdrop-filter: blur(10px);
@@ -189,8 +189,20 @@ a:hover {
     transition:  0.5s;
   }
   
-  #button:hover {
+#button:hover {
     background-color: #ADA296;;
     letter-spacing:4px;
   }
   
+fieldset {
+    padding:55px;
+}  
+
+fieldset h2 {
+    font-family: 'Climate Crisis', cursive;
+    margin:15px;
+    padding:20px;
+    font-size:40px;
+    letter-spacing: 4PX;
+    text-shadow: #F42C04 5px 5px;
+}
